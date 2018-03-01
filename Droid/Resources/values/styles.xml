@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+  <style name="MyTheme.Splash" parent ="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/loading</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:statusBarColor">#ffffff</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorPrimary">#ffffff</item>
+    <item name="colorPrimaryDark">#ffffff</item>
+    <item name="colorAccent">#ffffff</item>
+    <item name="windowActionModeOverlay">true</item>
+  </style>
+  <style name="MyTheme.Loading" parent ="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/loading</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:windowTranslucentStatus">true</item>
+    <item name="android:statusBarColor">#ffffff</item>
+    <item name="windowNoTitle">true</item>
+    <item name="windowActionBar">false</item>
+    <item name="colorPrimary">#ffffff</item>
+    <item name="colorPrimaryDark">#ffffff</item>
+    <item name="colorAccent">#ffffff</item>
+    <item name="windowActionModeOverlay">true</item>
+  </style>
+</resources>

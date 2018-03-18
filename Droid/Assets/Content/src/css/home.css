@@ -1,0 +1,142 @@
+body {
+    display: block;
+    margin: 5vh;
+}
+
+.icons{
+  width: 6.0vh;
+  height: 6.0vh;
+  background-image: url(./../svg/chat.svg)
+}
+
+ul {
+  list-style-type: none;
+}
+
+.messages{
+    padding-left: 0px;
+    background-color: white;
+    height: 50vh;
+    overflow: auto;
+}
+
+.input-message {
+  word-break: break-all; 
+  word-wrap: break-word;
+  margin: 30px 50% 30px 30px;
+  padding: 10px;
+  position: relative;
+  background: green;
+  border-color: green;
+  border-radius: 10px;
+  color: white;
+  text-align: left;
+}
+.input-message:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20px;
+  border-top: 10px solid;
+  border-top-color: inherit; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent; 
+}
+
+
+.output-message {
+  word-break: break-all; 
+  word-wrap: break-word;
+  margin: 30px 30px 30px 50%;
+  padding: 10px;
+  position: relative;
+  background: blue;
+  border-color: blue;
+  border-radius: 10px;
+  color: white;
+  text-align: right;
+}
+
+@media screen and (min-width: 300px) {
+  .output-message {
+    margin: 30px 30px 30px 50%;
+  }
+  .input-message {
+    margin: 30px 50% 30px 30px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .output-message {
+    margin: 30px 30px 30px 70%;
+  }
+  .input-message {
+    margin: 30px 70% 30px 30px;
+  }
+}
+
+.output-message:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  border-top: 10px solid;
+  border-top-color: inherit; 
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent; 
+}
+
+
+
+.enter-send-message{
+  display: flex;
+}
+
+.enter-message{
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.send-message{
+  width: 30%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1.5vh 1.5vh;
+  text-decoration: none;
+  height: 6.0vh;
+}
+
+.navbar a:hover {
+  background: #f1f1f1;
+  color: black;
+}
+
+.navbar a.active {
+  background-color: rgb(130, 76, 175);
+  color: white;
+}
